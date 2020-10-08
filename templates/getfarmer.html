@@ -1,0 +1,18 @@
+{% extends 'layout.html' %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1>Society Area</h1>
+<h2>Home Page</h2>
+<p>You are logged in as , {{ username }}!</p>
+
+<form action="/getfarmerdetails" method="post">
+  <fieldset>
+    <legend>get details:</legend>
+    <label for="name">name</label>
+    <input type="text" name="name" id="name" />
+    <br /><br />
+
+    <input type="submit" value="submit" />
+  </fieldset>
+</form>
+
+{% endblock %}

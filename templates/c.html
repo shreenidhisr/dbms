@@ -1,0 +1,34 @@
+{% extends 'layout.html' %} {% block title %}Home{% endblock %} {% block static
+%}
+<link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" />
+{% endblock %} {% block content %}
+<h1>Society Area</h1>
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+
+<div class="card" style="width: 18rem">
+  <img
+    src="https://source.unsplash.com/200x200/?agriculture"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">Add product</h5>
+    <p class="card-text">Click here to add product</p>
+    <a href="/addproduct" class="btn btn-primary">Add product</a>
+  </div>
+</div>
+<!-- get farmers details -->
+<div class="card" style="width: 18rem">
+  <img
+    src="https://source.unsplash.com/200x200/?agriculture"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">get farmer details</h5>
+    <p class="card-text">Click here to get farmer details</p>
+    <a href="/getfarmerdetails" class="btn btn-primary">get details</a>
+  </div>
+</div>
+{% endblock %}
