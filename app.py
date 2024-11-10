@@ -5,7 +5,7 @@ import sys
 mydb = pymysql.connect(
     host="localhost",
     user="shreenidhi",
-    password="Sd@8050102193",
+    password="Sd@something",
     database="pythonlogin",
 )
 cursor = mydb.cursor()
